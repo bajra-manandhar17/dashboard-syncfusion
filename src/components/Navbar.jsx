@@ -15,9 +15,8 @@ import { useStateContext } from '../contexts/ContextProvider';
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={title} position='BottomCenter'>
     <button type='button' onClick={customFunc} style={{ color }} className='relative p-3 text-xl rounded-full hover:bg-light-gray'>
-      <span style={{ background: dotColor }} className='absolute inline-flex w-2 h-2 rounded-full right-2 top-2'>
-        {icon}
-      </span>
+      <span style={{ background: dotColor }} className='absolute inline-flex w-2 h-2 rounded-full right-2 top-2' />
+      {icon}
     </button>
   </TooltipComponent>
 )
